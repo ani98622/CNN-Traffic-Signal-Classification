@@ -1,0 +1,10 @@
+streamlit 
+tensorflow
+sklearn
+numpy
+cv2
+PIL
+matplotlib.pyplot
+seaborn
+matplotlib
+pandas
