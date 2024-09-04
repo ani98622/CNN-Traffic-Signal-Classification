@@ -1,59 +1,50 @@
+# Traffic Sings Classification Project
 
+This project uses a deep learning model (Convolutional Neural Network) to classify German traffic signs into **43 categories**. The model is trained on the **GTSRB dataset** and is now deployed as a Streamlit app for easy access and real-time predictions.
 
-# Traffic-Signal-Classification Project
+## Try the App
 
-This project implements a deep learning model for recognizing German traffic signs using a Convolutional Neural Network (CNN). The model is trained on the **GTSRB dataset**, which contains **43 different classes** of traffic signs. The implementation includes data preprocessing, model creation, training, evaluation, and predictions on test data. Additionally, the project visualizes the data and the model's performance.
+Access the deployed model on Streamlit [here](https://traffic-sign-classification.streamlit.app/).
 
 ## Project Overview
 
 ### Dataset
-The **German Traffic Sign Recognition Benchmark (GTSRB)** dataset is utilized for this project. The dataset includes over **50,000 images** classified into **43 categories** of traffic signs. Each image is resized to **30x30x3 pixels** to standardize input to the CNN.
+The **German Traffic Sign Recognition Benchmark (GTSRB)** dataset includes over **50,000 images** classified into **43 traffic sign categories**. All images are resized to **30x30x3 pixels** for compatibility with the CNN.
 
 ### Key Steps
 
 1. **Data Preparation**: 
-   - Downloaded and uncompressed the **GTSRB dataset**.
-   - Visualized the distribution of images across different classes.
-   - Preprocessed the images and split the data into training and validation sets.
-   - Applied one-hot encoding to the labels for model compatibility.
+   - Downloaded and preprocessed the **GTSRB dataset**.
+   - Split the data into training and validation sets, with one-hot encoding of labels.
 
 2. **Model Architecture**:
-   - Designed a deep Convolutional Neural Network (CNN) with multiple convolutional and pooling layers.
-   - Incorporated Batch Normalization and Dropout layers to enhance model performance and reduce overfitting.
+   - Designed a deep CNN with convolutional, pooling, Batch Normalization, and Dropout layers.
    - Configured the model to classify images into **43 categories** using a Softmax output layer.
 
 3. **Training**:
-   - Utilized the **Adam optimizer** with a learning rate of **0.001**.
-   - Trained the model over **30 epochs** with data augmentation techniques such as rotation, zoom, and shifts to improve generalization.
-   - Monitored the model's performance using validation data.
+   - Trained using the **Adam optimizer** (learning rate: **0.001**) over **30 epochs**.
+   - Applied data augmentation techniques like rotation and zoom for better generalization.
 
-4. **Evaluation & Visualization**:
-   - Evaluated the model's performance on validation and test datasets.
-   - Visualized the training history and the loss over epochs to understand the model's learning process.
-   - Generated a **confusion matrix** to analyze the model's accuracy across different traffic sign classes.
-   - Provided a detailed classification report.
+4. **Evaluation**:
+   - Evaluated on validation and test datasets.
+   - Visualized the training process, confusion matrix, and provided a detailed classification report.
 
 5. **Prediction**:
-   - Applied the trained model to predict traffic signs on test images.
-   - Visualized predictions with a comparison between actual and predicted labels, highlighting correct and incorrect predictions.
+   - Predicted traffic signs and visualized comparisons between actual and predicted labels.
 
 6. **Model Saving**:
-   - Saved the trained model for future inference and deployment.
+   - Saved the trained model for future inference.
 
 ## Results
 
-- The model achieved a test accuracy of over **`97.5%`**.
-- Detailed performance metrics and confusion matrices are included to provide insights into the model's classification capabilities.
-
-## Visualizations
-
-- Data distribution, sample images, and model performance visualizations are provided to enhance the understanding of the project's workflow and results.
+- The model achieved a test accuracy of **`97.5%`**.
+- Performance metrics and confusion matrices provide detailed insights.
 
 ## How to Use
 
 1. **Clone this repository**.
-2. Ensure you have all the required libraries installed.
-3. Run the **Jupyter notebook** to replicate the results or use the saved model for inference.
+2. Install the required libraries.
+3. Run the **Jupyter notebook** to replicate results or use the saved model for inference.
 
 ## Model
 
