@@ -7,6 +7,8 @@ __pycache__/
 *.so
 my_env/
 
+my_env/
+
 # Distribution / packaging
 .Python
 build/
