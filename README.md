@@ -37,7 +37,7 @@ The **German Traffic Sign Recognition Benchmark (GTSRB)** dataset includes over 
 
 ## Results
 
-- The model achieved a test accuracy of **`97.5%`**.
+- The model achieved a test accuracy of **`98%`**.
 - Performance metrics and confusion matrices provide detailed insights.
 
 ## How to Use
